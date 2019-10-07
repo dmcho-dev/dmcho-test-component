@@ -28,6 +28,6 @@ before_deploy: "echo 'ready?'"
 
 deploy:
   on:
-    branch: production
+    branch: master
   skip_cleanup: true
   tag: next
