@@ -23,3 +23,11 @@ after_success:
 branches:
   only:
     - master
+
+before_deploy: "echo 'ready?'"
+
+deploy:
+  on:
+    branch: production
+  skip_cleanup: true
+  tag: next
